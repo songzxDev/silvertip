@@ -1,3 +1,4 @@
+# -*- coding: UTF-8 -*-
 """
 Django settings for silvertip project.
 
@@ -37,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'attendance',
     'statistics',
+    'common_html',
 ]
 
 MIDDLEWARE = [
@@ -47,6 +49,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+
 ]
 
 ROOT_URLCONF = 'silvertip.urls'
@@ -127,7 +130,6 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'collected_static')
 # 如果不想用 STATICFILES_DIRS 可以不用，都放在 app 里的 static 中也可以
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "common_static"),
-    '/path/to/others/static/',  # 用不到的时候可以不写这一行
 )
 
 # 这个是默认设置，Django 默认会在 STATICFILES_DIRS中的文件夹 和 各app下的static文件夹中找文件

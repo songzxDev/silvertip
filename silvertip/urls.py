@@ -1,3 +1,4 @@
+# -*- coding: UTF-8 -*-
 """silvertip URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
@@ -15,7 +16,9 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
+from common_view import views as commonview
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^index/$', commonview.index, name='index'),
 ]
