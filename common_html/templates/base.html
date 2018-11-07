@@ -55,6 +55,8 @@
     <meta name="msapplication-tap-highlight" content="no">
 
     <title>{% block title %}默认标题{% endblock %} - 统计系统</title>
+
+
     <!-- iview css -->
     <link rel="stylesheet" type="text/css" href="/static/plugins/iview-3.1.4/styles/iview.css">
     <!-- iview js -->
@@ -63,14 +65,12 @@
 
     <!-- jquery -->
     <script type="text/javascript" src="/static/plugins/jquery-3.3.1.min.js"></script>
-
     <!-- UIkit CSS -->
     <link rel="stylesheet" href="/static/plugins/uikit-3.0.0-rc.20/css/uikit.min.css"/>
 
     <!-- UIkit JS -->
-    <script src="/static/plugins/uikit-3.0.0-rc.20/js/uikit.min.js"></script>
-    <script src="/static/plugins/uikit-3.0.0-rc.20/js/uikit-icons.min.js"></script>
-
+    <script type="text/javascript" src="/static/plugins/uikit-3.0.0-rc.20/js/uikit.min.js"></script>
+    <script type="text/javascript" src="/static/plugins/uikit-3.0.0-rc.20/js/uikit-icons.min.js"></script>
 
 </head>
 <body>
@@ -84,5 +84,6 @@
 {% include 'bottom.html' %}
 
 {% block custom_js %} {% endblock %}
+
 </body>
 </html>

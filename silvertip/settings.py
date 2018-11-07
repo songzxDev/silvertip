@@ -80,7 +80,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'silvertip',
         'USER': 'root',
-        'PASSWORD': '123456',
+        'PASSWORD': 'szx@731918A',
         'HOST': '127.0.0.1',
         'PORT': '3306',
     }
